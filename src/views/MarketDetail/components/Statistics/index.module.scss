@@ -1,0 +1,57 @@
+.statistics {
+  @apply flex items-center min-h-[120px] rounded-lg bg-pinkopacity-light py-[16px] px-[30px];
+  @apply md:justify-between;
+  @apply sm:justify-between px-[20px];
+  @apply lg:justify-start;
+  @apply xsmax:block;
+
+  .symbolInfo {
+    @apply flex items-center;
+    @apply lg:pr-[50px];
+
+    .tokenIcon {
+      @apply block w-[40px] h-[40px] mr-[10px];
+    }
+
+    .symbolName {
+      .name {
+        @apply text-2xl font-medium text-black-light mb-[6px];
+        @apply dark:text-black-dark;
+      }
+
+      .fullName {
+        @apply text-lg font-normal text-gray-light leading-none mb-0;
+        @apply dark:text-grey-light;
+      }
+    }
+  }
+
+  .statisticsInfo {
+    @apply sm:p-0 md:p-0;
+    @apply lg:px-[50px];
+    @apply xsmax:hidden;
+
+    .label {
+      @apply block text-lg text-gray-light font-normal mb-[6px];
+      @apply dark:text-grey-light;
+    }
+
+    .link {
+      @apply text-2xl text-black-light font-medium text-transparent border-b bg-clip-text underline bg-primary-light;
+    }
+
+    .value {
+      @apply mb-0 text-2xl text-black-light font-medium;
+      @apply dark:text-black-dark;
+    }
+  }
+
+  .statisticsPart {
+    @apply hidden;
+    @apply xsmax:block;
+
+    .statisticsInfo {
+      @apply xsmax:inline-block xsmax:w-[50%] xsmax:mt-[20px];
+    }
+  }
+}

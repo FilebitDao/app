@@ -1,0 +1,8 @@
+.symbol {
+  @apply flex items-center;
+
+  .symbolName {
+    @apply font-semibold  text-black-light leading-none text-md pl-[8px];
+    @apply dark:text-black-dark;
+  }
+}

@@ -1,0 +1,43 @@
+.button {
+  @apply w-full h-[46px] rounded-md text-lg mt-[20px] p-[1px];
+
+  .buttonInner {
+    @apply w-full h-full flex justify-center items-center rounded-md;
+
+    .btnText {
+      @apply text-md font-semibold;
+    }
+
+    &.ghostButton {
+      @apply bg-gray-light;
+      @apply dark:bg-gray-dark;
+
+      .btnText {
+        @apply bg-primary-light text-transparent bg-clip-text;
+      }
+    }
+  }
+
+  &.smallButton {
+    @apply h-[38px];
+  }
+
+  &.primaryButton {
+    @apply bg-primary-light text-white font-normal cursor-pointer;
+  }
+
+  &.disabled {
+    @apply bg-none bg-switch-light cursor-not-allowed;
+
+    .buttonInner {
+      .btnText {
+        @apply text-gray-light bg-transparent;
+        @apply dark:text-gray-dark;
+      }
+    }
+  }
+
+  &.loading {
+    @apply cursor-not-allowed;
+  }
+}

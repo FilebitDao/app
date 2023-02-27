@@ -1,0 +1,14 @@
+.loading {
+  @apply flex justify-center flex-col items-center py-[100px];
+
+  .loadingContent {
+    >div {
+      @apply mx-auto;
+    }
+
+    .text {
+      @apply text-xl font-normal text-black-light mt-[20px];
+      @apply dark:text-black-dark;
+    }
+  }
+}

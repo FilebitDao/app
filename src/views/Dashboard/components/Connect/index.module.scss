@@ -1,0 +1,15 @@
+.connect { 
+  @apply px-[16px] pt-[95px] pb-[40px] rounded-lg bg-opacity-light backdrop-blur-[2px] flex-col justify-center items-center hidden;
+  @apply dark:bg-opacity-dark;
+  @apply xsmax:flex;
+
+  .connectTitle {
+    @apply text-2xl font-bold text-black-light text-center mt-[30px] mb-[20px];
+    @apply dark:text-black-dark;
+  }
+
+  .connectDesc {
+    @apply text-lg text-center text-black-light leading-snug;
+    @apply dark:text-black-dark;
+  }
+}

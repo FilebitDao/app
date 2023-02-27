@@ -1,0 +1,36 @@
+.connectors {
+  .walletItem {
+    @apply cursor-pointer p-[1px] bg-gray-light transition-[300px] rounded-lg mb-[12px] hover:bg-primary-light;
+    @apply dark:bg-opacity-dark;
+
+    .loading {
+      @apply w-[24px] h-[24px] origin-center;
+    }
+
+    &.connecting {
+      @apply bg-primary-light relative;
+
+      .loading {
+        @apply absolute right-[16px] top-[25px] animate-spin;
+      }
+    }
+
+    .connectWrapper {
+      @apply flex items-center bg-gray-light rounded-lg p-[16px];
+      @apply dark:bg-gray-dark;
+
+      .walletInfo {
+        @apply pl-[12px];
+
+        .walletName {
+          @apply text-lg font-semibold text-black-light leading-normal;
+          @apply dark:text-black-dark;
+        }
+
+        .desc {
+          @apply text-md font-medium text-gray-light m-0;
+        }
+      }
+    }
+  }
+}

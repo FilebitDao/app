@@ -1,0 +1,7 @@
+.viewRequestList {
+  @apply flex justify-center mt-[30px];
+
+  .viewText {
+    @apply bg-primary-light bg-clip-text text-md text-transparent cursor-pointer font-medium tracking-[1px];
+  }
+}

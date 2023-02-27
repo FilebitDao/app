@@ -1,0 +1,65 @@
+:global {
+  .MuiModal-root {
+    @apply flex justify-center items-center;
+  }
+}
+
+.modal {
+  @apply w-[400px] mx-auto bg-white outline-none rounded-lg;
+  @apply dark:bg-layout-dark;
+  @apply xsmax:max-w-[90%];
+
+  &.modalLarge {
+    @apply w-[440px];
+  }
+
+  .modalTitle {
+    @apply relative border-solid border-b border-t-0 border-l-0 border-r-0 border-modal-light;
+    @apply dark:border-modal-dark;
+
+    .title {
+      @apply text-xl text-black-light font-semibold pb-[24px] pt-[30px] indent-[24px];
+      @apply dark:text-black-dark;
+    }
+
+    &.titleCenter {
+      @apply flex justify-center border-0;
+
+      .title {
+        @apply pb-0 pt-[20px] indent-0;
+
+        :global {
+          .symbol-component {
+            .symbol-name {
+              @apply text-xl font-semibold;
+            }
+          }
+        }
+      }
+    }
+
+    .modalClose {
+      @apply absolute right-[31px] top-[30px] cursor-pointer;
+
+      :global {
+        svg {
+          path {
+            @apply dark:fill-white;
+          }
+        }
+      }
+    }
+  }
+
+  .modalContent {
+    @apply p-[24px];
+
+    :global {
+      .tab-component {
+        .tab-content {
+          @apply bg-transparent;
+        }
+      }
+    }
+  }
+}

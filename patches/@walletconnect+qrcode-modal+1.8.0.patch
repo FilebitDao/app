@@ -1,0 +1,22 @@
+diff --git a/node_modules/@walletconnect/qrcode-modal/dist/cjs/index.js b/node_modules/@walletconnect/qrcode-modal/dist/cjs/index.js
+index f5ceca8..31268ab 100644
+--- a/node_modules/@walletconnect/qrcode-modal/dist/cjs/index.js
++++ b/node_modules/@walletconnect/qrcode-modal/dist/cjs/index.js
+@@ -617,7 +617,7 @@ function getWrappedCallback(cb) {
+ }
+ 
+ function getText() {
+-  var lang = browserUtils.getNavigatorOrThrow().language.split("-")[0] || "en";
++  var lang = localStorage.i18nextLng || browserUtils.getNavigatorOrThrow().language.split("-")[0] || "en";
+   return languages[lang] || languages["en"];
+ }
+ 
+@@ -638,8 +638,6 @@ function close$1() {
+ var isNode = function () { return typeof process !== "undefined" && typeof process.versions !== "undefined" && typeof process.versions.node !== "undefined"; };
+ 
+ function open$2(uri, cb, qrcodeModalOptions) {
+-  console.log(uri);
+-
+   if (isNode()) {
+     open(uri);
+   } else {

@@ -1,0 +1,97 @@
+.settings {
+  @apply cursor-pointer;
+  @apply mdmax:hidden;
+
+  svg {
+    path, circle {
+      @apply fill-black-light;
+      @apply dark:fill-black-dark;
+    }
+  }
+}
+
+.settingsMenu {
+  @apply shadow-none;
+
+  :global {
+    .MuiPaper-root {
+      @apply rounded-md bg-white;
+      @apply dark:bg-layout-dark;
+    }
+
+    .MuiMenu-list {
+      @apply p-0;
+    }
+  }
+
+  .menuContent {
+    @apply w-[200px] h-auto p-[16px] transition-all;
+    box-shadow: 0px 4px 14px rgba(186, 186, 186, 0.25);
+  }
+}
+
+.backRow {
+  @apply text-black-light flex items-center cursor-pointer;
+  @apply dark:text-black-dark;
+
+  .icon {
+    @apply pr-[8px];
+
+    svg {
+      path {
+        @apply fill-black-light;
+        @apply dark:fill-black-dark;
+      }
+    }
+  }
+}
+
+.settingsCard {
+  @apply h-[58px];
+}
+
+.settingsRow {
+  @apply text-black-light flex justify-between items-center mt-[16px];
+  @apply dark:text-black-dark;
+
+  &.noMargin {
+    @apply m-0;
+  }
+
+  &.localeRow {
+    @apply cursor-pointer;
+  }
+
+  .localeName {
+    .localeText {
+      @apply pl-[6px];
+    }
+  }
+
+  .currentLocale {
+    @apply flex items-center;
+  }
+
+  svg {
+    path {
+      @apply stroke-black-light;
+      @apply dark:stroke-black-dark;
+    }
+  }
+}
+
+.swipeAbleViews {
+  :global {
+    .react-swipeable-view-container {
+      > div {
+        &[aria-hidden="false"] {
+          height: 100%;
+        }
+    
+        &[aria-hidden="true"] {
+          height: 0;
+        }
+      }
+    }
+  }
+}

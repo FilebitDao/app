@@ -1,0 +1,92 @@
+.poolItem {
+  @apply flex-1 rounded-lg bg-opacity-light p-[24px];
+  @apply dark:bg-opacity-dark;
+
+  &:last-of-type {
+    @apply xlmax:mt-[20px];
+  }
+
+  .stakeInfo {
+    @apply flex items-center justify-between;
+
+    .tokenInfo {
+      @apply flex items-center gap-[14px];
+  
+      .tokenAsset {
+        @apply w-[30px] h-[30px];
+      }
+  
+      .tokenName {
+        @apply text-2xl font-bold text-black-light;
+        @apply dark:text-black-dark;
+      }
+    }
+
+    .rewardInfo {
+      @apply flex items-center text-md text-black-light gap-[6px];
+      @apply dark:text-black-dark;
+
+      .rewardAmount {
+        @apply text-md text-black-light font-medium;
+        @apply dark:text-black-dark;
+      }
+
+      .claim {
+        @apply bg-primary-light cursor-pointer text-transparent bg-clip-text font-medium text-lg flex items-center;
+      }
+    }    
+  }
+
+  .userStaked {
+    @apply mt-[24px];
+
+    .tip {
+      @apply text-md text-black-light font-medium mb-[16px];
+      @apply dark:text-black-dark;
+    }
+
+    .amountWrapper {
+      @apply flex items-center gap-[14px];
+
+      .tokenAsset {
+        @apply w-[30px] h-[30px];
+      }
+  
+      .amount {
+        @apply bg-primary-light bg-clip-text text-transparent font-bold leading-none text-[42px];
+      }
+    }
+  }
+
+  .poolStatistics {
+    @apply flex items-center mt-[30px] gap-[64px];
+    @apply xsmax:block;
+
+    .statisticsPart {
+      @apply xsmax:mt-[20px] xsmax:first-of-type:mt-0;
+
+      .label {
+        @apply text-md text-black-light font-medium;
+        @apply dark:text-black-dark;
+      }
+
+      .valueWrapper {
+        @apply flex items-center mt-[10px] gap-[8px];
+
+        .tokenAsset {
+          @apply w-[22px] h-[22px];
+        }
+    
+        .value {
+          @apply text-2xl text-black-light font-bold;
+          @apply dark:text-black-dark;
+        }
+      }
+    }
+  }
+
+  .poolButtons {
+    @apply flex gap-[16px] mt-[15px];
+    @apply xsmax:block;
+  }
+}

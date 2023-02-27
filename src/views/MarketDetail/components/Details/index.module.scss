@@ -1,0 +1,19 @@
+.details {
+  @apply my-[20px];
+
+  :global {
+    .tab-component {
+      .tab-switcher {
+        @apply xsmax:w-full;
+
+        .tab-item {
+          @apply xsmax:flex-1 xsmax:justify-center xsmax:p-0;
+        }
+      }
+
+      .tab-content {
+        @apply xsmax:rounded-t-none;
+      }
+    }
+  }
+}

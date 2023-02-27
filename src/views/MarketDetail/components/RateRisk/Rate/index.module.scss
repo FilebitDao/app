@@ -1,0 +1,75 @@
+.rate {
+  @apply flex-1 rounded-lg;
+
+  :global {
+    .tab-component {
+      .tab-item {
+        @apply flex-1 p-0 justify-center #{!important};
+      }
+
+      .tab-content {
+        @apply h-[300px] flex justify-center items-center rounded-t-none;
+      }
+    }
+  }
+}
+
+.interestRateModel {
+  @apply w-full h-full pt-[30px]; 
+}
+
+.utilizationRate {
+  @apply flex items-center;
+  @apply xsmax:px-[20px];
+
+  .leftChart {
+    @apply w-[170px] h-[170px] relative;
+
+    .chartsValues {
+      @apply absolute w-full h-full left-0 top-0 flex justify-center items-center flex-col;
+
+      .percent {
+        @apply font-medium text-black-light text-2xl leading-none mb-0;
+        @apply dark:text-black-dark;
+      }
+
+      .count {
+        @apply text-gray-light text-lg leading-none mb-0 pt-[6px];
+        @apply dark:text-grey-light;
+      }
+    }
+  } 
+
+  .desc {
+    @apply pl-[20px];
+
+    .liquidity {
+      .label {
+        @apply font-normal text-gray-light text-lg leading-none mb-0 pt-[6px];
+      }
+
+      .value {
+        @apply font-medium text-black-light text-2xl mb-0 leading-snug;
+        @apply dark:text-black-dark;
+      }
+    }
+
+    .borrowDeposit {
+      @apply flex items-center gap-[20px] mt-[20px];
+      @apply xsmax:block;
+
+      .part {
+        @apply xsmax:mt-[20px] xsmax:first-of-type:mt-0;
+
+        .label {
+          @apply font-normal text-gray-light text-lg leading-none mb-0 pt-[6px];
+        }
+  
+        .value {
+          @apply font-medium text-black-light text-lg leading-snug mb-0;
+          @apply dark:text-black-dark;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.approveToken {
+  .desc {
+    @apply text-lg leading-normal text-black-light text-center font-semibold;
+    @apply dark:text-black-dark;
+  }
+
+  .loading {
+    @apply flex justify-center items-center py-[80px];
+  }
+
+  :global {
+    .button-component {
+      .btn-ghost {
+        @apply bg-white;
+        @apply dark:bg-layout-dark;
+      }
+    }
+  }
+}

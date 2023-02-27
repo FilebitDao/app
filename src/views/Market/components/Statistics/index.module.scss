@@ -1,0 +1,70 @@
+.statistics {
+  @apply lg:flex lg:justify-between lg:gap-[20px];
+
+  .statisticsPart {
+    @apply flex justify-between items-center h-[183px] rounded-lg bg-pinkopacity-light py-[20px] px-[30px];
+    @apply lg:flex-1;
+    @apply sm:px-[16px];
+
+    &:first-of-type {
+      @apply lgmax:mb-[20px];
+      @apply lg:m-0;
+    }
+
+    .leftInfo {
+      @apply max-w-[70%];
+
+      .title {
+        @apply text-lg text-black-light leading-none font-bold	mb-[12px];
+        @apply dark:text-black-dark;
+      }
+  
+      .count {
+        @apply inline-block text-transparent bg-clip-text font-bold	text-3xl bg-primary-light w-full whitespace-nowrap truncate;
+      }
+  
+      .percent {
+        @apply mt-[15px];
+  
+        .percentRow {
+          @apply mb-[8px] indent-[28px] relative text-md leading-[14px] text-gray-light font-medium;
+          @apply dark:text-white;
+  
+          &:before {
+            @apply absolute content-[''] block w-[20px] h-[12px] bg-bluechart-light;
+          }
+  
+          &:nth-of-type(2) {
+            &:before {
+              @apply bg-purplechart-light;
+            }
+          }
+  
+          &:nth-of-type(3) {
+            @apply mb-0;
+            &:before {
+              @apply bg-pinkchart-light;
+            }
+          }
+        }
+      }
+    }
+
+    .charts {
+      @apply w-[130px] h-[130px] relative;
+
+      .chartsValues {
+        @apply absolute w-full h-full left-0 top-0 flex justify-center items-center flex-col;
+
+        .percent {
+          @apply font-bold text-black-light text-lg leading-none mb-0;
+          @apply dark:text-black-dark;
+        }
+      }
+    }
+  }
+
+  .borrow {
+    @apply bg-blueopacity-light;
+  }
+}

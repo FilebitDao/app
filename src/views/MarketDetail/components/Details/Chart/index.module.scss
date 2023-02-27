@@ -1,0 +1,29 @@
+.supplyDetails {
+  @apply p-[30px];
+  @apply sm:p-[20px] md:p-[20px];
+
+  .chart {
+    @apply w-full h-[270px] relative mb-[20px];
+  }
+
+  .chartsDetail {
+    @apply flex justify-between items-center;
+    @apply xsmax:block;
+
+    .detailItem {
+      @apply xsmax:mt-[20px];
+
+      .label {
+        @apply text-lg text-gray-light font-normal leading-none;
+        @apply dark:text-grey-light;
+        @apply sm:text-md;
+        @apply md:text-md;
+      }
+
+      .value {
+        @apply text-lg text-black-light font-medium leading-none m-0 mt-[12px];
+        @apply dark:text-black-dark;
+      }
+    }
+  }
+}

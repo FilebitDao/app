@@ -1,0 +1,11 @@
+.withdrawList {
+  .requestRow {
+    @apply flex justify-between items-center text-lg text-black-light;
+    @apply dark:text-black-dark; 
+  }
+}
+
+.emptyWithdrawList {
+  @apply text-lg text-black-light;
+  @apply dark:text-black-dark; 
+}

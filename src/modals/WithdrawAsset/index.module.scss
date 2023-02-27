@@ -1,0 +1,27 @@
+.withdrawAsset {
+  :global {
+    .tab-component {
+
+      .tab-switcher {
+        @apply rounded-md overflow-hidden;
+
+        .tab-item {
+          @apply flex flex-[2] justify-center rounded-none bg-tab-switcher-light px-0;
+          
+          
+          &:last-of-type {
+            @apply flex-[3];
+          }
+
+          &.tab-active-item {
+            @apply bg-tab-switcher-active-light;
+          }
+        }
+      }
+
+      .tab-content {
+        @apply mt-[30px];
+      }
+    }
+  }
+}

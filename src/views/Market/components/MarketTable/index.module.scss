@@ -1,0 +1,14 @@
+.markets {
+  @apply mt-[20px];
+  @apply xsmax:hidden;
+
+  :global {
+    .table-component {
+      .deposit-total-apy-value,
+      .borrow-total-apy-value {
+        @apply hidden;
+        @apply lg:block;
+      }
+    }
+  }
+}

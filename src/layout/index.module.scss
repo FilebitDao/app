@@ -1,0 +1,30 @@
+:global {
+  body {
+    @apply bg-layout-light;
+    @apply dark:bg-layout-dark dark:backdrop-blur-[2px];
+  }
+}
+
+.layout {
+  @apply w-[100vw] h-[100vh] relative flex flex-col justify-between;
+
+  &:before {
+    @apply content-[''] block w-[1070px] h-[1058px] max-w-[100vw] max-h-[100vh] absolute z-[1] opacity-60 top-0 left-0 bg-contain bg-no-repeat bg-[url('../assets/img/narwhal/bg-left.png')];
+  }
+
+  &:after {
+    @apply content-[''] block w-[960px] h-[808px] max-w-[100vw] max-h-[100vh] absolute z-[1] right-0 bottom-0 bg-contain bg-no-repeat bg-[url('../assets/img/narwhal/bg-right.png')];
+  }
+
+  .layoutNested {
+    @apply relative w-[100vw] z-[2] flex-grow;
+  }
+
+  .pageContainer {
+    @apply mt-[20px];
+    @apply sm:px-[20px];
+    @apply md:px-[40px];
+    @apply lg:px-[calc(50%_-_502px)];
+    @apply xl:px-[calc(50%_-_608px)];
+  }
+}

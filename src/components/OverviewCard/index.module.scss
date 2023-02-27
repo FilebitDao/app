@@ -1,0 +1,31 @@
+.overviewCard {
+  @apply mt-[20px];
+
+  .title {
+    @apply text-lg font-medium text-black-light leading-relaxed;
+    @apply dark:text-black-dark;
+  }
+
+  .cardRows {
+    @apply px-[20px] py-[10px] rounded-lg bg-gray-light mt-[10px];
+    @apply dark:bg-opacity-dark;
+
+    .cardRow {
+      @apply py-[10px] flex justify-between items-center;
+
+      .rowLabel {
+        @apply text-lg font-medium text-gray-light leading-none;
+        @apply dark:text-gray-dark;
+      }
+  
+      .rowValue {
+        @apply text-lg font-medium text-black-light leading-none flex items-center m-0;
+        @apply dark:text-black-dark;
+
+        .arrow {
+          @apply px-[6px];
+        }
+      }
+    }
+  }
+}

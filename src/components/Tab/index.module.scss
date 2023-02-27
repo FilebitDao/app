@@ -1,0 +1,25 @@
+.tabs {
+  .tabSwitcher {
+    @apply flex;
+
+    .tabItem {
+      @apply px-[50px] text-xl text-gray-light font-normal cursor-pointer h-[48px] leading-none flex items-center rounded-tr-lg rounded-tl-lg bg-tab-active-light;
+      @apply dark:text-grey-light;
+      @apply xsmax:text-lg;
+
+      &.smallTabItem {
+        @apply text-lg;
+      }
+
+      &.tabItemActive {
+        @apply bg-none bg-opacity-light text-black-light backdrop-blur-[2px] font-semibold;
+        @apply dark:bg-opacity-dark dark:text-black-dark;
+      }
+    }
+  }
+
+  .tabContent {
+    @apply bg-opacity-light rounded-br-lg rounded-bl-lg rounded-tr-lg;
+    @apply dark:bg-opacity-dark;
+  }
+}

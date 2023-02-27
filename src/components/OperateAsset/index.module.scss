@@ -1,0 +1,15 @@
+.borrowRepay {
+  @apply flex;
+
+  .borrow {
+    @apply text-md text-pink-light font-semibold cursor-pointer;
+  }
+
+  .repay {
+    @apply text-md text-blue-light font-semibold cursor-pointer ml-[10px];
+  }
+
+  .large {
+    @apply text-lg font-normal;
+  }
+}

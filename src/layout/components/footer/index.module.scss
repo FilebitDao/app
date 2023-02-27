@@ -1,0 +1,39 @@
+.footer {
+  @apply flex items-center justify-between relative z-[2] pb-[30px] pt-[30px];
+  @apply sm:px-[20px];
+  @apply md:px-[40px];
+  @apply lg:px-[calc(50%_-_502px)];
+  @apply xl:px-[calc(50%_-_608px)];
+  @apply xsmax:hidden;
+
+  .logoContainer {
+    @apply flex items-center text-md font-medium leading-none text-grey-light gap-[10px];
+    @apply dark:text-gray-light;
+
+    .logo {
+      @apply w-[90px] h-[24px] bg-[url('../../../assets/img/narwhal/logo-light.png')] bg-contain bg-no-repeat;
+      @apply dark:bg-[url('../../../assets/img/narwhal/logo-dark.png')];
+    }
+  }
+
+  .textIcons {
+    @apply flex items-center justify-between gap-[24px];
+
+    .service {
+      @apply text-md font-medium leading-none text-grey-light;
+      @apply dark:text-gray-light;
+      @apply mdmax:hidden;
+    }
+
+    .iconWrapper {
+      @apply inline-flex gap-[2px] w-[24px] h-[24px];
+
+      svg {
+        path {
+          @apply fill-grey-light;
+          @apply dark:fill-gray-light;
+        }
+      }
+    }
+  }
+}

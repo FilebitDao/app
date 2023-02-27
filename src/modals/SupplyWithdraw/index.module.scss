@@ -1,0 +1,21 @@
+.supplyWithdraw {
+  :global {
+    .tab-component {
+      .tab-switcher {
+        @apply rounded-md overflow-hidden;
+
+        .tab-item {
+          @apply flex flex-1 justify-center rounded-none bg-tab-switcher-light;
+
+          &.tab-active-item {
+            @apply bg-tab-switcher-active-light;
+          }
+        }
+      }
+
+      .tab-content {
+        @apply mt-[30px];
+      }
+    }
+  }
+}

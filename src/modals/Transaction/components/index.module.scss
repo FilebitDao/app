@@ -1,0 +1,22 @@
+.modalContent {
+  @apply py-[10px] text-center;
+
+  &.pandingContent {
+    @apply py-[50px];
+  }
+
+  .title {
+    @apply text-lg font-medium text-black-light leading-normal text-center mt-[12px];
+    @apply dark:text-black-dark;
+  }
+
+  .content {
+    @apply text-md font-medium text-black-light leading-normal text-center my-[12px];
+    @apply dark:text-black-dark;
+  }
+
+  .viewTransaction {
+    @apply text-transparent bg-clip-text font-medium bg-primary-light;
+    @apply dark:text-transparent;
+  }
+}

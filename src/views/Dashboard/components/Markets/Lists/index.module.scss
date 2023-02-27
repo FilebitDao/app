@@ -1,0 +1,21 @@
+.detailCard {
+  .cardRow {
+    @apply flex justify-between items-center py-[6px];
+
+    .cardLabel {
+      @apply text-md font-normal text-black-light;
+      @apply dark:text-black-dark;
+    }
+
+    .cardValue {
+      @apply text-md font-normal text-black-light;
+      @apply dark:text-black-dark;
+    }
+  }
+
+  :global {
+    .opreate-asset {
+      @apply flex justify-between mt-[20px];
+    }
+  }
+}

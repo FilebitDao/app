@@ -1,0 +1,52 @@
+.accordion {
+  @apply p-[16px] rounded-lg bg-opacity-light backdrop-blur-[2px] flex-1;
+  @apply dark:bg-opacity-dark;
+
+  .title {
+    @apply text-2xl font-semibold	leading-none text-black-light mb-[26px];
+    @apply dark:text-black-dark;
+  }
+
+  .empty {
+    @apply w-full flex flex-col justify-center items-center py-[30px];
+
+    .icon {
+      @apply w-[107px] h-[111px] bg-[url(../../assets/img/narwhal/panding.svg)] bg-no-repeat bg-contain;
+    }
+
+    .tip {
+      @apply pt-[10px] text-md font-medium text-gray-light border-table-light;
+      @apply dark:text-gray-dark dark:border-table-dark;
+    }
+  }
+
+  :global {
+    .MuiAccordion-root {
+      @apply bg-transparent shadow-none;
+
+      &::before {
+        @apply hidden;
+      }
+
+      &.Mui-expanded {
+        @apply mb-0;
+      }
+    }
+
+    .MuiAccordionSummary-root {
+      @apply px-0;
+
+      &.Mui-expanded {
+        @apply min-h-[auto];
+
+        .MuiAccordionSummary-content {
+          @apply my-[15px];
+        }
+      }
+    }
+
+    .MuiAccordionDetails-root {
+      @apply px-[8px];
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.mintRepay {
+  @apply w-full;
+  @apply lg:flex-1;
+
+  :global {
+    .tab-component {
+      .tab-item {
+        @apply flex-1 flex justify-center;
+      }
+
+      .tab-content {
+        @apply rounded-tr-none min-h-[250px] flex;
+      }
+    }
+  }
+}
+
+.mintRepayPart {
+  @apply p-[20px] flex items-end w-full;
+
+  :global {
+    .approve-token-loading {
+      @apply w-full h-full flex justify-center items-center;
+    }
+
+    .approve-token {
+      @apply mx-auto;
+    }
+  }
+
+  .mintRepayContent {
+    @apply w-full h-full flex flex-col justify-between;
+  }
+}

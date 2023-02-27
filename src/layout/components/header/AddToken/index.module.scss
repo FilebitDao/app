@@ -1,0 +1,4 @@
+.addToken {
+  @apply text-sm text-black-light font-medium p-[6px] py-[5px] cursor-pointer rounded-[8px] border border-solid border-black-light;
+  @apply dark:text-black-dark dark:border-white;
+}

@@ -1,0 +1,9 @@
+.closeIcon {
+  @apply mt-[10px];
+  svg {
+    * {
+      @apply fill-gray-light;
+      @apply dark:fill-gray-dark;
+    }
+  }
+}

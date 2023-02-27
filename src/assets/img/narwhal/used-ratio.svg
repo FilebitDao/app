@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="38px" viewBox="0 0 39 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 2</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FD8EBA" offset="0%"></stop>
+            <stop stop-color="#77B0D0" offset="100%"></stop>
+        </linearGradient>
+        <path d="M19.2448276,0 C29.5812375,0 37.9880002,8.22815701 38.1695346,18.454251 L38.1725311,18.7920905 C38.1725311,29.1741918 29.6948244,37.584181 19.2448276,37.584181 C14.5564103,37.584181 10.1395103,35.8807101 6.72388187,32.8857445 L6.12240567,34.276564 C5.66375752,35.337611 4.43180124,35.8259517 3.37075429,35.3673036 C2.78657005,35.1147841 2.34901737,34.610182 2.181772,33.9961247 L0.074086509,26.2575573 C-0.22967928,25.1422524 0.428203181,23.9918683 1.54350811,23.6881025 C1.82987749,23.6101066 2.12956064,23.5939085 2.42266856,23.6405832 L10.2047061,24.8798006 C11.3462552,25.0615817 12.1243009,26.1343528 11.9425198,27.2759019 C11.8393454,27.9238168 11.4383304,28.4858628 10.8592242,28.7942045 L9.06667626,29.7489324 C11.8099501,32.2547825 15.4092553,33.684181 19.2448276,33.684181 C27.4414349,33.684181 34.0998449,27.1832018 34.2692261,19.1075137 L34.2725311,18.7920905 C34.2725311,10.5709323 27.5478843,3.9 19.2448276,3.9 C10.9417709,3.9 4.21712404,10.5709323 4.21712404,18.7920905 C4.21712404,19.8690458 3.3440793,20.7420905 2.26712404,20.7420905 C1.19016878,20.7420905 0.317124039,19.8690458 0.317124039,18.7920905 C0.317124039,8.40998925 8.79483078,0 19.2448276,0 Z" id="path-2"></path>
+        <filter x="-1.3%" y="-1.3%" width="102.6%" height="102.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.451035293 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <ellipse id="path-4" cx="11.6078513" cy="10.9407214" rx="6.52988598" ry="9.06881797"></ellipse>
+        <filter x="-3.8%" y="-2.8%" width="107.7%" height="105.5%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <ellipse id="path-6" cx="19" cy="13.7836813" rx="5" ry="7"></ellipse>
+        <filter x="-5.0%" y="-3.6%" width="110.0%" height="107.1%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-2" transform="translate(0.000000, 0.000000)">
+            <g id="形状结合" fill-rule="nonzero">
+                <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+            </g>
+            <g id="编组" transform="translate(6.542670, 7.546958)">
+                <ellipse id="椭圆形备份" fill="#FFA931" transform="translate(9.653968, 11.779480) rotate(-24.000000) translate(-9.653968, -11.779480) " cx="9.65396825" cy="11.7794797" rx="6.52988598" ry="9.06881797"></ellipse>
+                <g id="椭圆形" transform="translate(11.607851, 10.940721) rotate(-24.000000) translate(-11.607851, -10.940721) ">
+                    <use fill="#FFC069" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                </g>
+                <ellipse id="椭圆形备份-2" fill="#FFA931" transform="translate(17.000000, 13.533126) rotate(6.000000) translate(-17.000000, -13.533126) " cx="17" cy="13.5331258" rx="5" ry="7"></ellipse>
+                <g id="椭圆形备份-3" transform="translate(19.000000, 13.783681) rotate(6.000000) translate(-19.000000, -13.783681) ">
+                    <use fill="#FFC069" fill-rule="evenodd" xlink:href="#path-6"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

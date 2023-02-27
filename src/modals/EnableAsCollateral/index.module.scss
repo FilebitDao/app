@@ -1,0 +1,10 @@
+.enalbeAssest {
+  .desc {
+    @apply text-black-light text-lg font-semibold leading-normal mb-0;
+    @apply dark:text-black-dark;
+  }
+
+  .more {
+    @apply text-transparent bg-clip-text font-normal bg-primary-light underline;
+  }
+}

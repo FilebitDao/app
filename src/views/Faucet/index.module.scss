@@ -1,0 +1,6 @@
+.faucet {
+  .title {
+    @apply text-[48px] font-semibold leading-normal text-black-light mb-[40px];
+    @apply dark:text-black-dark;   
+  }
+}

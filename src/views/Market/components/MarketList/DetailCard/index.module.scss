@@ -1,0 +1,24 @@
+.marketDetailCard {
+  .cardRow {
+    @apply flex justify-between items-center py-[6px];
+
+    .cardLabel {
+      @apply text-md font-normal text-black-light;
+      @apply dark:text-black-dark;
+    }
+
+    .cardValue {
+      @apply text-md font-normal text-black-light;
+      @apply dark:text-black-dark;
+    }
+  }
+
+  .toDetail {
+    @apply text-center mt-[20px];
+
+    .viewDetail {
+      @apply text-transparent bg-clip-text font-bold bg-primary-light;
+      @apply dark:text-transparent;
+    }
+  }
+}

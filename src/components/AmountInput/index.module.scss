@@ -1,0 +1,85 @@
+.amountInput {
+  .title {
+    @apply text-lg font-medium text-black-light;
+    @apply dark:text-black-dark;
+  }
+
+  .amountInputWrapper {
+    @apply relative w-full rounded-md overflow-hidden h-[40px] p-[1px] my-[10px];
+
+    .amountInputContent {
+      @apply w-full h-[38px] bg-white rounded-md relative;
+      @apply dark:bg-layout-dark;
+
+      .inputLine {
+        @apply absolute bg-switch-light rounded-md left-0 top-0 bottom-0 right-0 transition-all z-[9];
+        @apply dark:bg-grey-dark;
+      }
+
+      .inputEl {
+        @apply w-[calc(100%_-_2px)] h-[calc(100%_-_2px)] absolute bg-white z-10 rounded-md left-[1px] top-[1px] bottom-[1px] right-[1px] indent-[10px] block border-none outline-none;
+        @apply dark:bg-gray-dark dark:text-black-dark;
+
+        &.disabled {
+          @apply cursor-not-allowed;
+        }
+
+        &.hoverable {
+          &:focus {
+            &+.inputLine {
+              @apply bg-primary-light;
+            }
+          }
+        }
+      }
+
+      .max {
+        @apply absolute bg-transparent top-[3px] bottom-[3px] right-[1px] px-[12px] outline-none text-md font-medium cursor-pointer text-blue-light flex items-center z-10;
+
+        &:before {
+          @apply absolute content-[''] left-0 top-[6px] bottom-[6px] w-[1px] bg-track-light;
+        }
+      }
+    }
+
+    &:hover {
+      .inputLine {
+        &.hoverable {
+          @apply bg-primary-light;
+        }
+      }
+    }
+  }
+
+  .balance {
+    @apply flex justify-between items-center;
+
+    .balanceLabel {
+      @apply text-md font-medium text-black-light;
+      @apply dark:text-black-dark;
+    }
+
+    .balanceValue {
+      @apply text-md font-medium text-black-light mb-0;
+      @apply dark:text-black-dark;
+    }
+  }
+
+  .addtionInfo {
+    @apply mt-[12px];
+
+    .addtionialRow {
+      @apply flex justify-between items-center py-[4px];
+
+      .addtionialLabel {
+        @apply text-md font-medium text-gray-light leading-none;
+        @apply dark:text-grey-light;
+      }
+  
+      .addtionialValue {
+        @apply text-md font-medium text-black-light mb-0 leading-none;
+        @apply dark:text-black-dark;
+      }
+    }
+  }
+}

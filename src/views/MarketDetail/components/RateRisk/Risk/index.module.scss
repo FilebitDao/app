@@ -1,0 +1,29 @@
+.risk {
+  @apply p-[30px] flex-1 rounded-lg bg-opacity-light;
+  @apply dark:bg-opacity-dark;
+  @apply sm:mt-[20px] md:mt-[20px] lg:m-0;
+  @apply xsmax:p-[20px];
+
+  .risks {
+    @apply max-h-[288px] overflow-auto;
+    @apply xsmax:max-h-max;
+
+    .riskRow {
+      @apply flex justify-between items-center py-[10px];
+  
+      .label {
+        @apply flex items-center;
+  
+        .labelText {
+          @apply text-lg text-gray-light font-normal leading-none;
+          @apply dark:text-grey-light;
+        }
+      }
+  
+      .value {
+        @apply text-lg text-black-light font-medium m-0 leading-none;
+        @apply dark:text-black-dark;
+      }
+    }
+  }
+}

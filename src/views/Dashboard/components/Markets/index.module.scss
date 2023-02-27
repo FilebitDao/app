@@ -1,0 +1,37 @@
+.markets {
+  @apply mt-[20px] block;
+  @apply lg:flex lg:justify-between lg:gap-[20px];
+  @apply xsmax:hidden;
+
+  .market {
+    @apply lg:flex-1;
+
+    :global {
+      .table-component {
+        &:first-of-type {
+          @apply mb-[20px];
+        }
+
+        &:last-of-type {
+          @apply mt-[20px] lg:mt-0;
+          @apply md:mb-[20px] sm:mb-[20px];
+        }
+      }
+    }
+  }
+}
+
+.marktsList {
+  @apply mt-[20px] hidden;
+  @apply xsmax:block;
+
+  :global {
+    .accordion {
+      @apply mb-[20px];
+
+      &::last-of-type {
+        @apply m-0;
+      }
+    }
+  }
+}

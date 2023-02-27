@@ -1,0 +1,21 @@
+.enableAssest {
+  .switch {
+    @apply w-[38px] h-[20px] rounded-[28px] inline-block relative bg-switch-light cursor-pointer;
+
+    &.enabled {
+      @apply bg-primary-light;
+    }
+
+    .input {
+      @apply w-0 h-0 opacity-0;
+    }
+
+    .slider {
+      @apply w-[16px] h-[16px] absolute left-[2px] top-[2px] rounded-md bg-white shadow-switch-light transition-all;
+
+      &.active {
+        @apply left-[20px];
+      }
+    }
+  }
+}

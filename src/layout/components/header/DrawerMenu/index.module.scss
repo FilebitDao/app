@@ -1,0 +1,56 @@
+.menuTrigger {
+  @apply hidden cursor-pointer;
+  @apply mdmax:block;
+
+  svg {
+    rect {
+      @apply fill-black-light;
+      @apply dark:fill-black-dark;
+    }
+  }
+}
+
+.drawerMenu {
+  @apply w-[80vw] h-full bg-white flex justify-between flex-col relative p-[20px];
+  @apply dark:bg-layout-dark;
+
+  .close {
+    @apply absolute right-[20px] top-[20px];
+
+    svg {
+      path {
+        @apply fill-black-light;
+        @apply dark:fill-black-dark;
+      }
+    }
+  }
+
+  .linksWrapper {
+    @apply mt-[30px];
+
+    .linkItem {
+      @apply block mb-[20px];
+
+      .linkText {
+        @apply text-xl font-medium text-black-light;
+        @apply dark:text-black-dark;
+      }
+    }
+
+    .activeLink {
+      .linkText {
+        @apply text-transparent bg-clip-text font-bold bg-primary-light;
+        @apply dark:text-transparent;
+      }
+    }
+  }
+
+  .themeSwitcher {
+    svg {
+      path {
+        @apply fill-black-light;
+        @apply dark:fill-black-dark;
+      }
+    }
+  }
+}

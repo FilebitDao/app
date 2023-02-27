@@ -1,0 +1,222 @@
+{
+  "amount": {
+    "amount": "Amount",
+    "amountTooHigh": "You entered a high amount, which puts you at risk of liquidation",
+    "availableLimit": "Available {{token}} limit",
+    "borrowableAmount": "Borrowable amount",
+    "currentlyBorrowing": "Currently borrowing",
+    "limitedMax": "80% MAX",
+    "max": "MAX",
+    "mintFee": "Mint Fee"
+  },
+  "connect": {
+    "pleaseConnect": "Please Connect your wallet",
+    "pleaseConnectDesc": "Please connect your wallet to see your supplies,borrowings,and open positions.",
+    "connectWallet": "Connect Wallet",
+    "disconnect": "Disconnect",
+    "copy": "Copy",
+    "network": "Network",
+    "metaMask": {
+      "name": "MetaMask",
+      "desc": "Most popular decentralized wallet"
+    },
+    "walletConnect": {
+      "name": "Wallet Connect",
+      "desc": "The communications protocol for web3"
+    },
+    "trustWallet": {
+      "name": "Trust Wallet",
+      "desc": "The most trusted & secure crypto wallet"
+    },
+    "coinbase": {
+      "name": "Coinbase Wallet",
+      "desc": "Your key to the world of crypto"
+    },
+    "bscwallet": {
+      "name": "Binance Wallet",
+      "desc": "Official decentralized wallet for BSC"
+    },
+    "bitkeep": {
+      "name": "BitKeep",
+      "desc": "An easy-to-use Web3 wallet"
+    },
+    "infinitywallet": {
+      "name": "Infinity Wallet",
+      "desc": "The only digital wallet you need"
+    }
+  },
+  "dashboard": {
+    "approve": "Approve",
+    "apy": "APY",
+    "assest": "Assest",
+    "borrow": "Borrow",
+    "borrowBalance": "Borrow balance",
+    "borrowMarket": "Borrow Market",
+    "borrowTotal": "Borrow Total",
+    "collateral": "Collateral",
+    "dailyEarnings": "Daily Earnings",
+    "deposit": "Deposit",
+    "depositTotal": "Deposit Total",
+    "limit": "Limit:",
+    "liquidity": "Liquidity",
+    "mint": "Mint",
+    "needApprove": "To {{action}} {{symbol}} {{direction}} the Narwhal Protocol, you need to approve it first",
+    "netApy": "Net APY",
+    "pendingClaim": "Claim",
+    "price": "NWL Price: ",
+    "repay": "Repay",
+    "safeLimit": "Your safe limit:",
+    "supplied": "Supplied",
+    "supply": "Supply",
+    "supplyMarket": "Supply Market",
+    "usedRatio": "Borrow limit used:",
+    "userAssets": "My Assets",
+    "walletBalance": "Balance",
+    "withdraw": "Withdraw",
+    "errors": {
+      "collateralDisableError": "Collateral Disable Error - There was a problem disabling {{assetName}} as a collateral. Please try again.",
+      "collateralEnableError": "Collateral Enable Error - There was a problem enabling {{assetName}} as a collateral. Please try again.",
+      "collateralRequired": "Collateral Required - Please repay all borrowed assets or set other assets as collateral."
+    }
+  },
+  "enable": {
+    "amountInValid": "Enter a valid amount to {{ action }}",
+    "borrowLimit": "Borrow Limit",
+    "borrowLimitUsed": "Borrow Limit Used",
+    "button": "Enable",
+    "description": "Each asset used as collateral increases your borrowing limit. Be careful, this can subject the asset to being seized in liquidation. ",
+    "more": "Learn more",
+    "title": "Enable {{symbol}} as Collateral"
+  },
+  "faucet": {
+    "limitAmount": "{{amount}} {{symbol}} per day",
+    "limitTitle": "limit",
+    "title": "Receive Test Coin",
+    "claim": "Claim"
+  },
+  "footer": {
+    "copy": "Narwhal.protocol©2022",
+    "termOfService": "Terms of Service"
+  },
+  "header": {
+    "addToken": "Import Tokens",
+    "dashboard": "Dashboard",
+    "faucet": "Faucet",
+    "market": "Market",
+    "stake": "Stake"
+  },
+  "interactive": {
+    "copyToClipboard": "Copied"
+  },
+  "market": {
+    "markets": "Markets",
+    "assest": "Assest",
+    "borrowMarket": "Borrow Market($)",
+    "borrowTotalApy": "Borrow Total APY",
+    "depositMarket": "Deposit Market($)",
+    "depositTotalApy": "Deposit Total APY",
+    "liquidity": "Liquidity($)",
+    "others": "Others",
+    "totalBorrow": "Total Borrowed",
+    "totalSupply": "Total Supplied",
+    "loading": "Loading Markets",
+    "detail": "View Detail"
+  },
+  "marketDetail": {
+    "availableLiquidity": "Available Liquidity",
+    "avgBorrowApy": "Past {{days}}D Avg. Borrow APY",
+    "avgDepositApy": "Past {{days}}D Avg. Deposit APY",
+    "avgTotalBorrow": "Past {{days}}D Avg. Total Borrow",
+    "avgTotalDeposit": "Past {{days}}D Avg. Total Depoist",
+    "borrowDetails": "Borrow Detail",
+    "borrowing": "Your Borrowing",
+    "chainlink": "Chainlink",
+    "currentBorrowApy": "Current Borrow APY",
+    "currentDepositApy": "Current Deposit APY",
+    "currentTotalBorrow": "Current Total Borrow",
+    "currentTotalDeposit": "Current Total Depoist",
+    "interestRateModel": "Interest Rate Model",
+    "miningApy": "Mining APY(%)",
+    "borrowApy": "Borrow APY(%)",
+    "depositApy": "Deposit APY(%)",
+    "totalBorrow": "Total Borrow",
+    "totalDeposit": "Total Deposit",
+    "price": "Price",
+    "priceFeed": "Price Feed",
+    "supplyDetails": "Supply Details",
+    "totalBorrowings": "Total Borrowings",
+    "totalDeposits": "Total Deposits",
+    "usedRatio": "Used Ratio",
+    "utilizationRate": "Utilization Rate",
+    "loading": "Loading Market",
+    "marketInfo": {
+      "stats": {
+        "borrowCapLabel": "Borrow cap",
+        "collateralFactorLabel": "Collateral factor",
+        "dailyBorrowingInterestsLabel": "Daily borrowing interests",
+        "dailyDistributionNwl": "Daily NWL distributed",
+        "dailySupplyingInterestsLabel": "Daily supplying interests",
+        "exchangeRateLabel": "Exchange rate",
+        "exchangeRateValue": "1 {{tokenSymbol}} = {{rate}} {{nTokenSymbol}}",
+        "marketLiquidityLabel": "Market liquidity",
+        "mintedTokensLabel": "{{nTokenSymbol}} minted",
+        "reserveFactorLabel": "Reserve factor",
+        "reserveTokensLabel": "Reserves",
+        "unlimitedBorrowCap": "Uncapped"
+      }
+    }
+  },
+  "mintRepayVai": {
+    "mintVai": {
+      "enableToken": "To mint NAI with the Narwhal Protocol, you need to enable it first"
+    },
+    "repayVai": {
+      "enableToken": "To repay NAI to the Narwhal Protocol, you need to enable it first"
+    }
+  },
+  "modal": {
+    "transactionDetails": "Transaction Details",
+    "pandingConfirm": "Panding Confirm",
+    "comfirmed": "Comfirmed!",
+    "confirmInWallet": "Confirm this transaction in your wallet",
+    "failed": "Failed!",
+    "viewTransaction": "View Transaction"
+  },
+  "overview": {
+    "borrowApy": "Borrow APY",
+    "distributionApy": "Distribution APY",
+    "supplyApy": "Supply APY",
+    "supplyBalance": "Supply balance",
+    "transactionOverview": "Transaction overview"
+  },
+  "settings": {
+    "darkMode": "Dark Mode",
+    "language": "Language",
+    "selectLanguage": "Select Language"
+  },
+  "stakeModal": {
+    "available": "Available",
+    "stake": "Stake {{symbol}}"
+  },
+  "stake": {
+    "claim": "Claim",
+    "dailyEmission": "Daily Emission",
+    "loading": "Loading Pools",
+    "reward": "Reward:",
+    "stake": "Stake",
+    "stakeApr": "{{symbol}} Staking APR",
+    "totalStaked": "Toal Staked",
+    "userStaked": "Your are staking",
+    "withdraw": "Withdraw"
+  },
+  "withdrawModal": {
+    "emptyList": "You have no active withdrawal requests",
+    "lockedUntil": "Locked until: {{dateTime}}",
+    "lockingPeriod": "Locking period",
+    "request": "Request Withdrawal",
+    "requestList": "Withdrawal request list",
+    "withdraw": "Withdraw {{symbol}}",
+    "withdrawable": "Withdrawable"
+  },
+  "noData": "No more data"
+}

@@ -1,0 +1,7 @@
+.warning {
+  @apply flex items-center p-[6px];
+
+  .warningTip {
+    @apply text-md leading-normal font-medium pl-[6px] text-warning m-0;
+  }
+}

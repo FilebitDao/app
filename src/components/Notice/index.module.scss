@@ -1,0 +1,26 @@
+.root {
+  @apply flex cursor-default;
+
+  .stateIcon {
+    @apply w-[19px] h-[19px] mr-[15px] mt-[4px];
+  }
+
+  .content {
+    .title {
+      @apply mb-[8px] text-lg leading-normal text-black-light font-semibold;
+      @apply dark:text-black-dark;
+    }
+
+    .description {
+      @apply m-0 text-md leading-normal text-gray-light font-medium;
+      @apply dark:text-gray-dark;
+    }
+  }
+}
+
+:global {
+  .Toastify__toast {
+    @apply pr-[20px];
+    @apply dark:bg-layout-dark;
+  }
+}

@@ -1,0 +1,58 @@
+.connectWallet {
+  @apply text-sm text-black-light font-medium p-[6px] py-[5px] cursor-pointer rounded-[8px] border border-solid border-black-light;
+  @apply dark:text-black-dark dark:border-white;
+}
+
+.accountMenu {
+  @apply shadow-none;
+
+  :global {
+    .MuiPaper-root {
+      @apply rounded-md bg-white;
+      @apply dark:bg-layout-dark;
+    }
+
+    .MuiMenu-list {
+      @apply p-0;
+    }
+  }
+
+  .menuContent {
+    @apply w-[220px] h-auto p-[16px] transition-all;
+    box-shadow: 0px 4px 14px rgba(186, 186, 186, 0.25);
+
+    .userAddress {
+      @apply flex items-center;
+
+      .address {
+        @apply text-lg font-semibold text-black-light inline-block mx-[10px];
+        @apply dark:text-black-dark;
+      }
+
+      .copy {
+        @apply text-transparent bg-clip-text font-bold bg-primary-light cursor-pointer;
+        @apply dark:text-transparent;
+      }
+    }
+
+    .network {
+      @apply flex justify-between items-center text-black-light mt-[15px];
+      @apply dark:text-black-dark;
+
+      .networkId {
+        @apply font-semibold text-black-light;
+        @apply dark:text-black-dark;
+      }
+    }
+
+    :global {
+      .button-component {
+        .btn-ghost {
+          @apply bg-white;
+          @apply dark:bg-layout-dark;
+        }
+      }
+    }
+  }
+
+}

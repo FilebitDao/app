@@ -1,0 +1,86 @@
+.table {
+  @apply p-[20px] rounded-lg bg-opacity-light backdrop-blur-[2px] flex-1;
+  @apply dark:bg-opacity-dark;
+
+  .title {
+    @apply text-2xl font-semibold	leading-none text-black-light;
+    @apply dark:text-black-dark;
+  }
+
+  .rowClickable {
+    @apply cursor-pointer;
+  }
+
+  .tableHeadCell {
+    @apply flex items-center;
+
+    &.sortable {
+      @apply cursor-pointer;
+    }
+  }
+
+  .sort {
+    @apply flex flex-col items-center gap-[2px] ml-[6px];
+  }
+
+  .collapse {
+    @apply absolute cursor-pointer right-[10px] top-[50%] mt-[-13px];
+
+    svg {
+      @apply origin-center transition-[300] block;
+      transform: rotate(180deg);
+    }
+
+    &.collapsed {
+      svg {
+        transform: rotate(0);
+      }
+    }
+  }
+
+  .empty {
+    @apply w-full flex flex-col justify-center items-center py-[30px];
+
+    .icon {
+      @apply w-[107px] h-[111px] bg-[url(../../assets/img/narwhal/panding.svg)] bg-no-repeat bg-contain;
+    }
+
+    .tip {
+      @apply pt-[10px] text-md font-medium text-gray-light border-table-light;
+      @apply dark:text-gray-dark dark:border-table-dark;
+    }
+  }
+
+  :global {
+    .MuiTable-root {
+      @apply mt-[20px];
+
+      .MuiTableHead-root {
+        @apply relative;
+
+        .MuiTableCell-root {
+          @apply py-[5px] pl-0 pr-[5px] text-md font-medium text-gray-light border-table-light;
+          @apply dark:text-gray-dark dark:border-table-dark;
+
+          * {
+            @apply font-medium;
+          }
+        }
+      }
+
+      .MuiTableBody-root {
+        @apply rounded-md;
+
+
+        .MuiTableCell-root {
+          @apply border-none text-md pl-0 pr-[5px] py-[14px] font-bold  text-black-light leading-none;
+          @apply dark:text-black-dark;
+
+          * {
+            @apply font-bold;
+          }
+        }
+      }
+    }
+  }
+}

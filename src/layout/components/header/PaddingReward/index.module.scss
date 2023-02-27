@@ -1,0 +1,4 @@
+.paddingReward {
+  @apply text-sm text-black-light font-medium px-[6px] py-[3px] cursor-pointer rounded-[8px] border border-solid border-black-light flex items-center;
+  @apply dark:text-black-dark dark:border-white;
+}

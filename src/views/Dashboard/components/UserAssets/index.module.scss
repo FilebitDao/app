@@ -1,0 +1,124 @@
+.userAssets {
+  @apply lg:flex lg:justify-between lg:gap-[20px];
+}
+
+.assetsInfo {
+  @apply w-full rounded-lg bg-blueopacity-light box-border p-[20px] mb-[20px];
+  @apply lg:flex-1 lg:m-0;
+
+  .title {
+    @apply font-bold text-black-light leading-none text-2xl;
+    @apply dark:text-black-dark;
+  }
+
+  .netApy {
+    @apply mt-[25px] mb-[30px];
+
+    .title {
+      @apply text-md font-medium text-black-light mb-[10px] leading-none;
+      @apply dark:text-black-dark;
+    }
+
+    .percent {
+      @apply text-[38px] text-transparent bg-clip-text font-bold bg-primary-light leading-none;
+    }
+  }
+
+  .infoParts {
+    @apply flex items-center justify-between;
+
+    .partItem {
+      @apply flex items-center;
+
+      .partDetail {
+        @apply ml-[12px];
+
+        .partLabel {
+          @apply mb-[6px] text-md text-black-light font-medium leading-none;
+          @apply dark:text-black-dark;
+        }
+
+        .partAmount {
+          @apply text-xl text-black-light font-medium leading-none;
+          @apply dark:text-black-dark;
+        }
+      }
+    }
+  }
+
+  .usedRatio {
+    @apply flex items-center mt-[25px];
+
+    .usedRatioDetail {
+      @apply ml-[12px] w-full;
+      
+      .usedRatioWrapper {
+        @apply flex justify-between;
+
+        .usedRatioLabel {
+          @apply mb-[6px] text-md text-black-light font-medium leading-none;
+          @apply dark:text-black-dark;
+
+          .ratioValue {
+            @apply font-bold pl-[3px];
+          }
+        }
+      }
+
+      .ratio {
+        .ratioBar {
+          @apply w-full h-[3px] bg-grey-light rounded-[3px] relative overflow-hidden;
+
+          .ratioTrack {
+            @apply absolute left-0 top-0 bottom-0 bg-track-light;
+          }
+
+          .safeTrack {
+            @apply w-[3px] h-[3px] absolute top-0 bottom-0 bg-pink-light;
+          }
+        }
+
+        .ratioText {
+          @apply mt-[6px] text-md text-black-light font-medium leading-none flex justify-end items-center;
+          @apply dark:text-black-dark;
+
+          .text {
+            @apply text-md leading-none font-bold text-black-light pl-[3px];
+            @apply dark:text-black-dark;
+          }
+        }
+      }
+    }
+  }
+}
+
+.mintRepay {
+  @apply w-full;
+  @apply lg:flex-1;
+
+  :global {
+    .tab-component {
+      .tab-item {
+        @apply flex-1 flex justify-center;
+      }
+
+      .tab-content {
+        @apply rounded-tr-none min-h-[250px] flex items-end;
+      }
+    }
+  }
+}
+
+.mintRepayPart {
+  @apply px-[20px] py-[15px] flex items-end w-full;
+
+  :global {
+    .approve-token-loading {
+      @apply w-full h-full flex justify-center items-center;
+    }
+  }
+
+  .mintRepayContent {
+    @apply w-full;
+  }
+}

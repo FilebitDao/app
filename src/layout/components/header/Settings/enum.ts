@@ -1,0 +1,4 @@
+export enum PANEL_ENUMS {
+  INITIAL_PANEL = 0,
+  SELECT_LOCALE = 1
+}
