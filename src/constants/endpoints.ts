@@ -1,8 +1,8 @@
 import { FilChainId } from 'types'
 
 export const API_ENDPOINT_URLS = {
-  [FilChainId.MAINNET]: 'https://narwhal-proxy-api.vercel.app/api',
-  [FilChainId.TESTNET]: 'https://narwhal-proxy-api.vercel.app/api'
+  [FilChainId.MAINNET]: 'https://api.narwhale-protocol.xyz/api',
+  [FilChainId.TESTNET]: 'https://api.narwhale-protocol.xyz/api'
 }
 
 export const RPC_URLS: {
