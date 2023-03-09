@@ -4,7 +4,7 @@ import { queryClient } from 'clients/api'
 import getProposal from 'clients/api/queries/getProposals/getProposal'
 import { GetProposalInput, GetProposalOutput } from 'clients/api/queries/getProposals/types'
 
-import { BLOCK_TIME_MS } from 'constants/bsc'
+import { BLOCK_TIME_MS } from 'constants/fil'
 import FunctionKey from 'constants/functionKey'
 
 import { Proposal } from 'types'

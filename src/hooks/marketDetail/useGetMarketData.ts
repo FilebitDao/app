@@ -4,7 +4,7 @@ import BigNumber from 'bignumber.js'
 
 import { useGetMarkets, useGetNTokenCash } from 'clients/api'
 
-import { BLOCKS_PER_DAY } from 'constants/bsc'
+import { BLOCKS_PER_DAY } from 'constants/fil'
 import { COMPOUND_MANTISSA } from 'constants/compoundMantissa'
 import { TOKENS } from 'constants/tokens'
 

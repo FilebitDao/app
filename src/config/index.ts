@@ -1,6 +1,6 @@
 import sample from 'lodash/sample'
 
-import { FIL_SCAN_URLS } from 'constants/bsc'
+import { FIL_SCAN_URLS } from 'constants/fil'
 import { API_ENDPOINT_URLS, RPC_URLS } from 'constants/endpoints'
 
 import { FilChainId } from 'types'

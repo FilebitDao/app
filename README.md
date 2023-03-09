@@ -31,6 +31,9 @@ cp .env.template .env
 
 You’ll need to have Node >16 or later version on your local development machine
 
+## Deployment
+
+To deploy, raise a PR to update image and config at: https://github.com/VenusProtocol/venus-k8s-app
 
 ## Local Development
 
@@ -49,13 +52,13 @@ yarn storybook
 To run dev environment:
 
 ```
-docker compose up Narwhale-ui-dev
+docker compose up venus-ui-dev
 ```
 
 To run prod environment:
 
 ```
-docker compose build && docker compose up Narwhale-ui-prod
+docker compose build && docker compose up venus-ui-prod
 ```
 
 ## Testing

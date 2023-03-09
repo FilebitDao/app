@@ -15,7 +15,7 @@ import ApproveToken from 'components/ApproveToken'
 import Button from 'components/Button'
 import ConnectWrapper from 'components/ConnectWrapper'
 
-import { BLOCK_TIME_MS } from 'constants/bsc'
+import { BLOCK_TIME_MS } from 'constants/fil'
 import PLACEHOLDER_KEY from 'constants/placeholderKey'
 import { TOKENS } from 'constants/tokens'
 

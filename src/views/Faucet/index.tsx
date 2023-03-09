@@ -8,7 +8,7 @@ import Button from 'components/Button'
 import Symbol from 'components/Symbol'
 import TableContainer from 'components/Table'
 
-import { FIL_FAUCET_URL } from 'constants/bsc'
+import { FIL_FAUCET_URL } from 'constants/fil'
 import { TOKENS } from 'constants/tokens'
 import { FAUCETING_STATE, FAUCET_LIMIT } from 'constants/tokens/faucet'
 

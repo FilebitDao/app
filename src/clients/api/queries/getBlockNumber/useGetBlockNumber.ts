@@ -3,7 +3,7 @@ import { QueryObserverOptions, useQuery } from 'react-query'
 import { getBlockNumber } from 'clients/api/'
 import { useWeb3 } from 'clients/web3'
 
-import { BLOCK_TIME_MS } from 'constants/bsc'
+import { BLOCK_TIME_MS } from 'constants/fil'
 import FunctionKey from 'constants/functionKey'
 
 interface GetBlockNumberOutput {

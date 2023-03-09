@@ -5,7 +5,7 @@ import getProposals, {
   GetProposalsOutput
 } from 'clients/api/queries/getProposals'
 
-import { BLOCK_TIME_MS } from 'constants/bsc'
+import { BLOCK_TIME_MS } from 'constants/fil'
 import FunctionKey from 'constants/functionKey'
 
 type Options = QueryObserverOptions<

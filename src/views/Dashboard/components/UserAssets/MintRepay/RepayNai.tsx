@@ -12,7 +12,7 @@ import ApproveToken from 'components/ApproveToken'
 import Button from 'components/Button'
 import ConnectWrapper from 'components/ConnectWrapper'
 
-import { BLOCK_TIME_MS } from 'constants/bsc'
+import { BLOCK_TIME_MS } from 'constants/fil'
 import { TOKENS } from 'constants/tokens'
 
 import useConvertWeiToReadableTokenString from 'hooks/useConvertWeiToReadableTokenString'

@@ -13,5 +13,5 @@ export const RPC_URLS: {
     'https://bsc-dataseed1.defibit.io',
     'https://bsc-dataseed.binance.org'
   ],
-  [FilChainId.TESTNET]: ['https://api.hyperspace.node.glif.io/rpc/v0']
+  [FilChainId.TESTNET]: ['https://api.hyperspace.node.glif.io/rpc/v1']
 }

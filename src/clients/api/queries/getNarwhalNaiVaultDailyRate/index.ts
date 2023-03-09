@@ -1,6 +1,6 @@
 import BigNumber from 'bignumber.js'
 
-import { BLOCKS_PER_DAY } from 'constants/bsc'
+import { BLOCKS_PER_DAY } from 'constants/fil'
 
 import { Comptroller } from 'types/contracts'
 

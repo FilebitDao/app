@@ -10,7 +10,7 @@ import {
   useGetNwlVaultTotalAllocationPoints
 } from 'clients/api'
 
-import { BLOCKS_PER_DAY } from 'constants/bsc'
+import { BLOCKS_PER_DAY } from 'constants/fil'
 import { DAYS_PER_YEAR } from 'constants/daysPerYear'
 import { TOKENS } from 'constants/tokens'
 
